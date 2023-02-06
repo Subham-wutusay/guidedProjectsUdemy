@@ -1,0 +1,25 @@
+body{
+    height: 100vh;
+    background-color: rgba(26, 24, 24, 0.936);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hover{
+    background: none;
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em 2em;
+    border: 2px solid rgba(255, 193, 77, 0.911);
+    color:  rgba(255, 193, 77, 0.911);
+}
+
+
+#hover:hover{
+    transition: all 100ms;
+    border-color: #f1ff5c;
+    color:  #e2e2db;
+    box-shadow: 0 0.5em 0.5em -0.4em  #f1ff5c;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}

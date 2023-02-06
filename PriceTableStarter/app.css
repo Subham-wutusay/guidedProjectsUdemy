@@ -1,0 +1,151 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+
+
+body{
+    background-color: #60a9ff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.panel{
+	box-sizing: border-box;
+	background-color: aliceblue;
+	border-radius: 10px;
+	padding : 10px 20px;
+	width: 100%;
+	max-width: 960px;
+	margin: 5%;
+}
+
+.pricing-plan{
+	border-bottom: 2px solid #e1f1ff;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.pricing-plan:last-child{
+	border-bottom: none;
+}
+
+img{
+	margin : 25px 0;
+	max-width: 100%;
+}
+
+.pricing-header{
+	color: rgb(143, 143, 143);
+	padding-bottom: 2rem;
+	border-bottom: 2px solid #e1f1ff;
+	letter-spacing: 1px;
+}
+
+ul > li{
+	color: #2189ff;
+	padding : 1rem 0;
+	border-bottom: 2px solid #e1f1ff;
+	font-size: 12px;
+}
+
+span{
+	display: block;
+	font-size: 3rem;
+	padding : 1rem 0;
+	color: #2189ff;
+}
+
+a{
+	display: inline-block;
+	text-decoration: none;
+	background: none;
+	border: 2px solid #2189ff;
+	background-color: aliceblue;
+	border-radius: 10px;
+	color: #2189ff;
+	margin: 1rem;
+	padding: 1rem 2rem;
+	transition: background-color 100ms ease-in;
+}
+
+a:hover, a:focus{
+ background-color: #60aaff48;
+}
+
+.pricing-button.is-featured{
+	transition: background-colour 100ms ease-in;
+	background-color: gold;
+	color: rosybrown;
+	border-color: goldenrod;
+}
+
+.pricing-button.is-featured:hover,.pricing-button.is-featured:focus{
+	background-color: rgba(255, 217, 0, 0.678)
+}
+
+@media (min-width : 800px){
+	.panel{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.pricing-plan{
+		border: none;
+		border-right: 2px solid #e1f1ff;
+		padding: 25px 50px
+	}
+
+	.pricing-plan:last-child{
+		border: none;
+	}
+}
+
